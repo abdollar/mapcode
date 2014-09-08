@@ -3,7 +3,7 @@ History.txt
 Manifest.txt
 README.md
 Rakefile
-ext/maidenhead/extconf.rb
-ext/maidenhead/maidenhead.c
-lib/maidenhead.rb
-test/test_maidenhead.rb
+ext/mapcode/extconf.rb
+ext/mapcode/mapcode.c
+lib/mapcode.rb
+test/test_mapcode.rb

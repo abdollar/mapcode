@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ruby.h>
 
-VALUE cMaidenhead;
+VALUE cMapcode;
 
 static VALUE latlong2mapcode(VALUE klass, VALUE lat, VALUE lon)
 {
@@ -20,14 +20,14 @@ static VALUE latlong2mapcode(VALUE klass, VALUE lat, VALUE lon)
 
 /*
  * call-seq:
- *   Maidenhead.new.mapcode(required, required) -> string
+ *   Mapcode.new.mapcode(required, required) -> string
  *
  * Call +mapcode
  * returns the mapcode as a string given a lat and long as float
  */
-void Init_maidenhead()
+void Init_mapcode()
 {
-  cMaidenhead = rb_define_class_under(rb_cObject, "Maidenhead", rb_cObject);
-  rb_define_method(cMaidenhead, "mapcode", latlong2mapcode, 2);
+  cMapcode = rb_define_class_under(rb_cObject, "Mapcode", rb_cObject);
+  rb_define_method(cMapcode, "mapcode", latlong2mapcode, 2);
 }
 
