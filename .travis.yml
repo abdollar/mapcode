@@ -9,3 +9,4 @@ before_install:
   - gem install hoe
   - gem install test-unit
   - gem install ZenTest
+  - gem install rake-compiler
