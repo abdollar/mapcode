@@ -1,6 +1,6 @@
-# Mapcode - a geolocation zipcode generator which uses open source code from mapcode.com
+# Mapcode - a geolocation zipcode generator
 
-The Mapcode gem provides a form of zipcode (pairs of letters and digits) for geo locations similar to the maidenhead locator system used by amateur radio and originally devised at a VHF meeting in Maidenhead England. The mapcode gem returns the mapcode for a given geo location using code from mapcode.com.
+The Mapcode gem provides a form of zipcode (pairs of letters and digits) for geo locations similar to the maidenhead locator system used by amateur radio and originally devised at a VHF meeting in Maidenhead England. The mapcode gem returns the mapcode for a given geo location using open source code from [mapcode.com](http://www.mapcode.com/) which aims to provide a better locator for geo locations.
 
 ## Installing
 ### OSX / Linux
@@ -17,6 +17,8 @@ Mapcode.new.mapcode(37.2841, -122.1432)
 
 This returns a mapcode as a string "FH.95R9@US-CA"
 - you can split on the @ to return just the location if the territory or country/state is not being used.
+
+## License
 
 (The MIT License)
 
